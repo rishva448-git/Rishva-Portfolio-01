@@ -83,4 +83,9 @@
     font-size: 2rem;
     margin-bottom: 2rem;
   }
+
+  /* reduce top offset so content isn't cropped under navbar on small devices */
+  .main-content {
+    padding-top: 72px;
+  }
 }

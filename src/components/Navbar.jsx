@@ -21,6 +21,12 @@ const Navbar = () => {
         if (stored === 'light') root.classList.add('light');
         else if (stored === 'dark') root.classList.remove('light');
         else {
+            // on small screens prefer dark by default
+            const isMobile = window.innerWidth <= 768;
+            if (isMobile) {
+                root.classList.remove('light');
+                return;
+            }
             const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
             if (prefersLight) root.classList.add('light');
         }

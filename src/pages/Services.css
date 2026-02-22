@@ -51,6 +51,12 @@
     overflow: hidden;
 }
 
+@media (max-width: 480px) {
+    .service-image-wrapper {
+        height: 140px;
+    }
+}
+
 .service-image {
     width: 100%;
     height: 100%;

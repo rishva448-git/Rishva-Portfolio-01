@@ -51,6 +51,43 @@ body {
   transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
+/* Ensure media and images never overflow on small screens */
+img, picture, video, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Make sure the html/body never allow horizontal scroll caused by children */
+html, body {
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Tighter paddings on small screens to avoid cropping */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 4%;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .service-image-wrapper {
+    height: 160px;
+  }
+
+  .contact-container {
+    border-radius: 12px;
+  }
+
+  /* reduce nav impact on small screens */
+  .navbar {
+    padding: 1rem 0;
+  }
+}
+
 h1,
 h2,
 h3,
