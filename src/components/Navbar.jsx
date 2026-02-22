@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -12,6 +12,18 @@ const Navbar = () => {
         };
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    // initialize theme from localStorage or system preference
+    useEffect(() => {
+        const root = document.documentElement;
+        const stored = localStorage.getItem('theme');
+        if (stored === 'light') root.classList.add('light');
+        else if (stored === 'dark') root.classList.remove('light');
+        else {
+            const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+            if (prefersLight) root.classList.add('light');
+        }
     }, []);
 
     const navLinks = [
@@ -60,6 +72,18 @@ const Navbar = () => {
                 </nav>
 
                 <div className="nav-actions">
+                    <button
+                        className="theme-toggle"
+                        onClick={() => {
+                            const root = document.documentElement;
+                            const isLight = root.classList.toggle('light');
+                            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+                        }}
+                        aria-label="Toggle theme"
+                    >
+                        <Sun size={18} className="icon-sun" />
+                        <Moon size={18} className="icon-moon" />
+                    </button>
                     {/* Mobile Toggle */}
                     <button
                         className="mobile-toggle"

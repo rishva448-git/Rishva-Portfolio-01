@@ -5,8 +5,8 @@ import './Contact.css';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
-        name: 'Rishva',
-        email: 'rishva@example.com',
+        name: '',
+        email: '',
         subject: '',
         message: ''
     });
@@ -72,7 +72,25 @@ const Contact = () => {
                                 <div className="contact-icon"><Mail size={20} /></div>
                                 <div>
                                     <span className="contact-label">Email</span>
-                                    <a href="mailto:techveons.creation.official@gmail.com" className="contact-link" style={{ fontSize: '0.9rem' }}>techveons.creation.official@gmail.com</a>
+                                    <a
+                                        href="mailto:techveons.creation.official@gmail.com"
+                                        className="contact-link contact-light"
+                                        style={{ fontSize: '0.9rem' }}
+                                        onClick={(e) => {
+                                            // let mailto work as normal but also focus form email input
+                                            const emailInput = document.getElementById('email');
+                                            if (emailInput) {
+                                                e.preventDefault();
+                                                const formTop = document.querySelector('.contact-form-wrapper');
+                                                if (formTop) {
+                                                    window.scrollTo({ top: formTop.offsetTop - 80, behavior: 'smooth' });
+                                                }
+                                                emailInput.focus();
+                                                // also set value if empty
+                                                if (!emailInput.value) emailInput.value = 'rishva@example.com';
+                                            }
+                                        }}
+                                    >techveons.creation.official@gmail.com</a>
                                 </div>
                             </li>
                             <li>
@@ -87,6 +105,27 @@ const Contact = () => {
                                 <div>
                                     <span className="contact-label">Location</span>
                                     <span className="contact-link">Tiruppur, Tamil Nadu, India</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="contact-icon"><Mail size={20} /></div>
+                                <div>
+                                    <span className="contact-label">Representative</span>
+                                    <button
+                                        className="contact-link contact-light contact-name-button"
+                                        onClick={(e) => {
+                                            const nameInput = document.getElementById('name');
+                                            if (nameInput) {
+                                                e.preventDefault();
+                                                const formTop = document.querySelector('.contact-form-wrapper');
+                                                if (formTop) {
+                                                    window.scrollTo({ top: formTop.offsetTop - 80, behavior: 'smooth' });
+                                                }
+                                                nameInput.focus();
+                                                if (!nameInput.value) nameInput.value = 'Rishva';
+                                            }
+                                        }}
+                                    >Rishva</button>
                                 </div>
                             </li>
                         </ul>

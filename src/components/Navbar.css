@@ -100,6 +100,31 @@
     gap: 1rem;
 }
 
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 40px;
+    height: 36px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: var(--text-primary);
+}
+
+.theme-toggle .icon-sun,
+.theme-toggle .icon-moon {
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* show sun in light mode, moon in dark mode */
+:root .icon-sun { opacity: 0; transform: rotate(-15deg) scale(0.9);} 
+:root .icon-moon { opacity: 1; transform: rotate(0) scale(1);}
+.light .icon-sun { opacity: 1; transform: rotate(0) scale(1);} 
+.light .icon-moon { opacity: 0; transform: rotate(15deg) scale(0.9);} 
+
 .mobile-toggle {
     display: block;
     background: none;

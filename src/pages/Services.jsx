@@ -35,7 +35,7 @@ const servicesData = [
         id: 6,
         title: 'Digital Marketing',
         description: 'Comprehensive brand identity creation and digital marketing to position you as an industry leader.',
-        image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=400'
+        image: 'https://images.unsplash.com/photo-1557800636-894a64c1696f?auto=format&fit=crop&q=80&w=400'
     }
 ];
 
