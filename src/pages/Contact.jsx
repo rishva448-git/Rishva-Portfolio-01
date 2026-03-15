@@ -87,7 +87,7 @@ const Contact = () => {
                                                 }
                                                 emailInput.focus();
                                                 // also set value if empty
-                                                if (!emailInput.value) emailInput.value = 'rishva@example.com';
+                                                if (!emailInput.value) emailInput.value = 'guru@example.com';
                                             }
                                         }}
                                     >techveons.creation.official@gmail.com</a>
@@ -97,14 +97,14 @@ const Contact = () => {
                                 <div className="contact-icon"><Phone size={20} /></div>
                                 <div>
                                     <span className="contact-label">Phone</span>
-                                    <a href="tel:+918270532283" className="contact-link">+91 8270532283</a>
+                                    <a href="tel:+919894808756" className="contact-link">+91 9894808756</a>
                                 </div>
                             </li>
                             <li>
                                 <div className="contact-icon"><MapPin size={20} /></div>
                                 <div>
                                     <span className="contact-label">Location</span>
-                                    <span className="contact-link">Tiruppur, Tamil Nadu, India</span>
+                                    <span className="contact-link">madurai, Tamil Nadu, India</span>
                                 </div>
                             </li>
                             <li>
@@ -122,10 +122,10 @@ const Contact = () => {
                                                     window.scrollTo({ top: formTop.offsetTop - 80, behavior: 'smooth' });
                                                 }
                                                 nameInput.focus();
-                                                if (!nameInput.value) nameInput.value = 'Rishva';
+                                                if (!nameInput.value) nameInput.value = 'Guru';
                                             }
                                         }}
-                                    >Rishva</button>
+                                    >Guru</button>
                                 </div>
                             </li>
                         </ul>

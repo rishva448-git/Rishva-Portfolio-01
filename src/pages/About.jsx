@@ -15,7 +15,7 @@ const About = () => {
                         </h2>
                         <div className="about-paragraphs">
                             <p>
-                                As the Founder and CEO of Techveons Creations, I am deeply passionate about
+                                As the co-Founder and CTO of Techveons Creations, I am deeply passionate about
                                 the intersection of technology, business, and creativity. At just 17 years old,
                                 I set out to build a company that delivers premium digital solutions to brands
                                 worldwide.

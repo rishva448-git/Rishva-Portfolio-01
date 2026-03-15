@@ -57,7 +57,8 @@ const Navbar = () => {
         <header className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
             <div className="container nav-container">
                 <a href="#home" onClick={(e) => scrollToSection(e, '#home')} className="nav-logo">
-                    <span>Rishva ArunKumar<span>.</span></span>
+                    <img src="logo.jpg" alt="Logo" className="nav-logo-image" />
+                    <span>Gurudharanitharan<span>.</span></span>
                 </a>
 
                 {/* Desktop Nav */}

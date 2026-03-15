@@ -40,7 +40,7 @@ const projectsData = [
         category: 'Content Creation',
         description: 'A high-converting video and poster campaign series that boosted client engagement by over 300%.',
         tags: ['Premiere Pro', 'After Effects'],
-        image: 'https://images.unsplash.com/photo-1432888117426-11b3bc2e2a01?auto=format&fit=crop&q=80&w=800'
+        image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800'
     },
     {
         id: 6,

@@ -39,10 +39,10 @@ const Home = () => {
                             <span className="live-dot"></span> Techveons Creations
                         </div>
                         <h1 className="hero-title animate-fade-in delay-100">
-                            Hi, I'm <span className="highlight">Rishva</span>
+                            Hi, I'm <span className="highlight">Gurudharanitharan</span>
                         </h1>
                         <h2 className="hero-subtitle animate-fade-in delay-200">
-                            Founder & CEO — Techveons Creations
+                            Co-Founder & CTO — Techveons Creations
                         </h2>
                         <p className="hero-description animate-fade-in delay-300">
                             Building innovative technology solutions with a passion for web development,
@@ -51,11 +51,11 @@ const Home = () => {
 
                         <div className="hero-socials animate-fade-in delay-300">
                             <a href="https://www.instagram.com/techveons.creation.official?igsh=MXNweGZ1cDN0YzZjZg==" className="social-icon-glow instagram" aria-label="Instagram" target="_blank" rel="noreferrer"><Instagram size={20} /></a>
-                            <a href="https://www.linkedin.com/in/techveons-creation-0184193ab/" className="social-icon-glow linkedin" aria-label="LinkedIn" target="_blank" rel="noreferrer"><Linkedin size={20} /></a>
+                            <a href="https://www.linkedin.com/in/guru-j-9b2b223a8?utm_source=share_via&utm_content=profile&utm_medium=member_android" className="social-icon-glow linkedin" aria-label="LinkedIn" target="_blank" rel="noreferrer"><Linkedin size={20} /></a>
                             <a href="https://www.facebook.com/profile.php?id=61587879343997" className="social-icon-glow facebook" aria-label="Facebook" target="_blank" rel="noreferrer"><Facebook size={20} /></a>
                             <a href="https://youtube.com/@techveons?si=Vv9lbqZosytiUBXz" className="social-icon-glow youtube" aria-label="YouTube" target="_blank" rel="noreferrer"><Youtube size={20} /></a>
-                            <a href="https://github.com/rishva448-git" className="social-icon-glow github" aria-label="GitHub" target="_blank" rel="noreferrer"><Github size={20} /></a>
-                            <a href="https://wa.me/918270532283" className="social-icon-glow whatsapp" aria-label="WhatsApp" target="_blank" rel="noreferrer"><MessageCircle size={20} /></a>
+                            <a href="https://github.com/gurudev-ops" className="social-icon-glow github" aria-label="GitHub" target="_blank" rel="noreferrer"><Github size={20} /></a>
+                            <a href="https://wa.me/9894808756" className="social-icon-glow whatsapp" aria-label="WhatsApp" target="_blank" rel="noreferrer"><MessageCircle size={20} /></a>
                         </div>
 
                         <div className="hero-actions animate-fade-in delay-400">
@@ -69,7 +69,7 @@ const Home = () => {
                     </div>
 
                     <div className="hero-visual animate-fade-in delay-300">
-                        <img src="/techveons-logo-main.jpg" alt="Techveons Logo" className="hero-image-no-frame" />
+                        <img src="/guru professional photo.jpeg" alt="Techveons Logo" className="hero-image-no-frame" />
                     </div>
                 </div>
             </div>

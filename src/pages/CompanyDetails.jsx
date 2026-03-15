@@ -26,8 +26,8 @@ const CompanyDetails = () => {
                                 <span className="fact-value">Techveons Creations</span>
                             </li>
                             <li>
-                                <span className="fact-label">Founder &amp; CEO:</span>
-                                <span className="fact-value">Rishva ArunKumar</span>
+                                <span className="fact-label">Co-Founder &amp; CTO:</span>
+                                <span className="fact-value">Gurudharanitharan</span>
                             </li>
                             <li>
                                 <span className="fact-label">Industry:</span>
